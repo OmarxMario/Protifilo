@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+    
+    transition: 0.3s ease;
+}
+:root{
+    --color:#f00;
+    --lightest:#ffe2d4;
+    --light:#fcb8a9;
+    --acent-color:#ff675b;
+    --dark:#AD2519;
+    --darkest:#5f1914;
+
+}
+body{
+    background: var(--acent-color);
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5px 0;
+    
+}
+.hero{
+    display: flex;
+    background: var(--darkest);
+
+
+}
+img{
+
+    filter: drop-shadow(#ffffff41 8px 8px 8px);
+
+}
+.cotent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img{
+
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0px 3px;
+    align-items: center;
+
+}
+.glass{
+    margin-block: 30px;
+    padding: 10px 20px;
+    color: var(--lightest);
+    font-weight: 400;
+    max-width: 150px;
+    background: #ffffff3b;;
+    border: var(--lightest) 1px solid;
+    border-radius: 32px;
+
+
+}
+.hero h1{
+    font-size: clamp(32px,5vw,50px);
+    font-weight: 800;
+    color: var(--lightest);
+}
+p{
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--lightest);
+}
+.btn{
+    margin-block: 25px;
+    padding: 15px 30px;
+    color: var(--lightest);
+    font-weight: 400;
+    max-width: 150px;
+    background: #ffffff13;;
+    border: var(--lightest) 1px solid;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background: var(--lightest);
+    color: var(--darkest);
+}
+
+.list{
+    width: max-content;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.icon{
+    background: #ffffff2d;
+    color: var(--lightest);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.icon:hover{
+    background: #ffffff49;
+}
+.top{
+    z-index: 9;
+    position: fixed;
+}
+#next{
+    color: #fff;
+    text-decoration: none;
+    background: #ffffff44;
+    padding: 10px 20px;
+    border-radius: 8px;
+    bottom: 20px;
+    right: 20px;
+}
+#next:hover{
+    color: var(--darkest);
+    background: var(--lightest);
+}
+.work{
+    background: var(--dark);
+}
+.work h1{
+     font-size: clamp(32px,5vw,50px);
+    font-weight: 800;
+    color: var(--light);
+}
+.card{
+    width: 500px;
+    height: 270px;
+    display: flex;
+    border-radius: 16px;
+    border:var(--lightest) 1px solid ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff13;
+    gap: 20px;
+    
+}
+
+.card i{
+    font-size: 100px;
+    color: var(--lightest);
+}
+.card p{
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--light);
+ 
+}
+.card a i {
+    font-size: inherit;
+    color: inherit;
+}
+.card h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--lightest);
+
+}
+.card:hover{
+    transform: translateY(-5px);
+    background: #ffffff2d;
+    box-shadow: #ffffff3b 8px 8px 8px;
+    cursor: pointer;
+
+}
+.card a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 60px;
+    gap: 5px;
+}
+.card:hover i{
+    transform: translateX(2px);
+}
+
+.subscribtion{
+    background: var(--acent-color);
+    
+}
+.subscribtion h1{
+     font-size: clamp(32px,5vw,50px);
+    font-weight: 800;
+    color: var(--darkest);
+}
+.sc{
+    border:  var(--darkest) solid 1px;
+    width: min(420px,90vw);
+    height: 230px;
+    cursor: pointer;
+
+}
+.sc:hover {
+    background: #5c1a1557;
+    box-shadow: #5c1a1557 8px 8px 8px;
+}
+.sc p,.sc a i,.sc h2,.sc i{
+    color:var(--darkest);
+}
+.sc a{
+        width: 150px;
+}
+.sc .btn{
+    border: var(--darkest) 1px solid;
+    background: #4104042d;
+    color: var(--darkest);
+
+}
+.sc .btn:hover{
+    background: var(--darkest);
+    color: var(--lightest);
+
+}
+.sc .btn:hover i {
+    color: var(--lightest);
+}
+footer{
+    background: var(--darkest);
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color:var(--lightest);
+}
+p{
+    font-size: 15px;
+    font-weight: 300;
+
+}
+@media (max-width: 768px){
+    .hero{
+        flex-direction: column;
+    }
+    .cotent{
+        text-align: center;
+    }
+
+    img{
+        width: 318px;
+        height: 458px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .glass{
+        justify-self: center;
+        align-self: center;
+    }
+    .btn{
+        font-size: 15px;
+    }
+    .hero .list{
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+    .card{
+        width: 90vw;
+    }
+}
+@media (max-width: 375px){
+    .hero .list .btn{
+        margin-block: 0px;
+        
+    }
+    .hero .list{
+        margin-top: 20px;
+    }
+}
+.hidden{
+
+    transform: translateX(-100%);
+}
+.show{
+    transform: translateX(0);
+    opacity: 1;
+    transition: 0.5s ease;
+}
+@keyframes gotoleft{0%{transform: translateX(500%);}100%{transform: translateX(0);}}
+@keyframes gotoup{0%{transform: translateY(-500%);}100%{transform: translateY(0);}}
+.cotent{animation: gotoleft alternate 2s ease-out;}
+img{animation: gotoup alternate 1s ease-out;}
+
+#e{
+    color: #fff;
+    text-decoration: none;
+    background: #ffffff44;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#d{
+    color: #fff;
+    text-decoration: none;
+    background: #ffffff44;
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#e:hover,#d:hover{
+    color: var(--darkest);
+    background: var(--lightest);
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--lightest);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--color);
+
+
+}
+header{
+    width: 90%;
+    justify-self: center;
+    height: 70px;
+    position: fixed;
+    z-index: 9;;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+}
